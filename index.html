@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strawberry Preschool & Daycare Jember — Profil Sekolah</title>
+  <meta name="description" content="Profil resmi Strawberry Preschool & Daycare Jember. &quot;Strong Wise Don't Be Worry&quot;. Pendidikan anak usia dini dan daycare ramah anak dengan rasio ideal 1:3 dan CCTV aktif.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Strawberry Preschool & Daycare Jember">
+  <meta property="og:description" content="&quot;Strong Wise Don't Be Worry&quot; — Pendidikan usia dini dan daycare terpercaya di Jember dengan joyful learning, pengasuh tersertifikasi, dan fasilitas higienis.">
+  <meta property="og:image" content="assets/logo_cropped.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            // Colors directly sampled from logo_strowberry.jpeg
+            brand: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              500: '#f90811',
+              600: '#e51d24', // Official Logo Cherry Strawberry Red
+              700: '#c51017',
+              800: '#9f1239',
+            },
+            leaf: {
+              50: '#f2f9ef',
+              100: '#e1f2dc',
+              500: '#69ab54', // Official Logo Calyx Green
+              600: '#5ea843',
+              700: '#4c8d35',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f8fafc; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+
+<body class="bg-[#FAFAFA] text-slate-700 font-sans antialiased selection:bg-brand-100 selection:text-brand-700">
+
+  <!-- TOP BAR -->
+  <aside class="bg-slate-900 text-slate-200 text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
+    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-brand-600 text-white uppercase tracking-wider">SPMB 2026/2027</span>
+    <span>Penerimaan murid baru dibuka di Jember. Kuota terbatas.</span>
+    <a href="#daftar" class="underline underline-offset-4 text-white hover:text-brand-200 font-bold ml-1">Book a Tour &rarr;</a>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo (Sampled directly from user asset) -->
+      <a href="#" class="flex items-center gap-3">
+        <img 
+          src="assets/logo_cropped.png" 
+          alt="Strawberry Preschool & Daycare Jember" 
+          class="h-12 w-auto object-contain hover:scale-102 transition-transform"
+        >
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#beranda" class="text-brand-600 hover:text-brand-700 transition">Home</a>
+        <a href="#tentang" class="hover:text-brand-600 transition">About</a>
+        <a href="#visi-misi" class="hover:text-brand-600 transition">Visi & Misi</a>
+        <a href="#data-sekolah" class="hover:text-brand-600 transition">Data Sekolah</a>
+        <a href="#program" class="hover:text-brand-600 transition">Programs</a>
+        <a href="#galeri" class="hover:text-brand-600 transition">Facilities</a>
+        <a href="#pengajar" class="hover:text-brand-600 transition">Teachers</a>
+        <a href="#alur" class="hover:text-brand-600 transition">Admissions</a>
+        <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/6285172252910?text=Halo%20Admin%20Strawberry%20Preschool,%20saya%20ingin%20tanya%20info%20pendaftaran" target="_blank" class="px-4 py-2 rounded-lg border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#daftar" class="px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow-sm transition flex items-center gap-2">
+          <span>Book a Tour</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 border border-slate-200">
+        <span id="menuOpenIcon" class="block"><i class="fa-solid fa-bars text-lg"></i></span>
+        <span id="menuCloseIcon" class="hidden"><i class="fa-solid fa-xmark text-lg"></i></span>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-6 space-y-3.5 shadow-lg">
+      <a href="#beranda" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Home</a>
+      <a href="#tentang" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">About Us</a>
+      <a href="#visi-misi" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Visi & Misi</a>
+      <a href="#data-sekolah" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Data Sekolah</a>
+      <a href="#program" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Programs</a>
+      <a href="#galeri" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Facilities</a>
+      <a href="#pengajar" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Teachers</a>
+      <a href="#alur" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">Admissions</a>
+      <a href="#faq" class="mobile-link block font-semibold text-slate-700 hover:text-brand-600">FAQ</a>
+      <div class="pt-3 border-t border-slate-200 flex flex-col gap-2.5">
+        <a href="https://wa.me/6285172252910?text=Halo%20Admin%20Strawberry%20Preschool" target="_blank" class="w-full py-2.5 text-center rounded-lg border border-slate-200 font-semibold text-slate-700 hover:bg-slate-50 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+          <span>Konsultasi WhatsApp</span>
+        </a>
+        <a href="#daftar" class="mobile-link w-full py-2.5 text-center rounded-lg bg-brand-600 text-white font-semibold">
+          Book a Tour / Daftar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="beranda" class="pt-8 pb-14 md:pt-12 md:pb-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left Text Details -->
+          <div class="lg:col-span-6 space-y-5 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold">
+              <span class="w-2 h-2 rounded-full bg-brand-600"></span>
+              <span>&ldquo;Strong Wise Don't Be Worry&rdquo;</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              Tumbuh Ceria, Mandiri & Berkarakter
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
+              Pendidikan anak usia dini berbasis <em>play-based learning</em> dan pengasuhan harian terpercaya di Jember. Rasio pengasuh 1:3 dengan pengawasan CCTV aktif.
+            </p>
+
+            <!-- 3 Quick Metrics -->
+            <div class="grid grid-cols-3 gap-3 border-y border-slate-100 py-3 text-center sm:text-left">
+              <div>
+                <div class="text-xl sm:text-2xl font-bold text-slate-900">1 : 3</div>
+                <div class="text-xs text-slate-500 font-medium">Rasio Daycare</div>
+              </div>
+              <div>
+                <div class="text-xl sm:text-2xl font-bold text-slate-900">24 Jam</div>
+                <div class="text-xs text-slate-500 font-medium">CCTV Aktif</div>
+              </div>
+              <div>
+                <div class="text-xl sm:text-2xl font-bold text-slate-900">100%</div>
+                <div class="text-xs text-slate-500 font-medium">Guru Bersertifikat</div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-1">
+              <a href="#daftar" class="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm transition text-center flex items-center justify-center gap-2 shadow-sm">
+                <span>Book a School Tour</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+              <a href="#program" class="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-sm transition text-center">
+                Lihat Program
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Photo Showcase -->
+          <div class="lg:col-span-6 space-y-3">
+            <div class="relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm aspect-[16/10] bg-slate-100">
+              <img 
+                src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80" 
+                alt="Aktivitas belajar di kelas Strawberry Preschool Jember"
+                class="w-full h-full object-cover"
+              >
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded text-xs font-semibold">
+                Kelas Interaktif & Ramah Anak
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2.5">
+              <div class="rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=400&q=80" alt="Sensory play" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=400&q=80" alt="Nap room" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=400&q=80" alt="Playground" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="tentang" class="py-14 md:py-20 bg-[#FAFAFA]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 grid grid-cols-2 gap-3">
+            <div class="rounded-2xl overflow-hidden border border-slate-200 aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=500&q=80" alt="Guru membaca bersama anak" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-slate-200 aspect-[4/5] mt-4">
+              <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=500&q=80" alt="Keceriaan anak" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Tentang Strawberry</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Pondasi Terbaik untuk Masa Emas Anak
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Kami memfasilitasi kebutuhan tumbuh kembang anak secara menyeluruh melalui pembiasaan mandiri, stimulasi sensorik, dan interaksi sosial yang hangat dalam lingkungan yang aman.
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-3 pt-1 text-xs text-slate-700">
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1">
+                <i class="fa-solid fa-heart text-brand-600 text-sm"></i>
+                <div class="font-bold text-slate-900">Nurturing Care</div>
+                <p class="text-slate-500 text-[11px]">Pengasuhan penuh kasih sayang & empati.</p>
+              </div>
+
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1">
+                <i class="fa-solid fa-shield-halved text-leaf-600 text-sm"></i>
+                <div class="font-bold text-slate-900">Safe Environment</div>
+                <p class="text-slate-500 text-[11px]">CCTV aktif & sanitasi berkala.</p>
+              </div>
+
+              <div class="p-3.5 bg-white rounded-xl border border-slate-200 space-y-1">
+                <i class="fa-solid fa-comment-dots text-slate-700 text-sm"></i>
+                <div class="font-bold text-slate-900">Daily WhatsApp Log</div>
+                <p class="text-slate-500 text-[11px]">Update porsi makan, tidur & foto harian.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEDICATED SECTION: VISI & MISI -->
+    <section id="visi-misi" class="py-14 md:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2 mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Landasan Lembaga</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Visi & Misi Kami</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <!-- Visi Card -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-[#FAFAFA] border border-slate-200 space-y-3 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center">
+                <i class="fa-solid fa-bullseye text-base"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Visi Lembaga</h3>
+              <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                "Menjadi lembaga PAUD dan Daycare unggulan yang menumbuhkembangkan anak yang berkarakter mulia, cerdas, kreatif, mandiri, dan bahagia dalam suasana belajar yang menyenangkan."
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-200 flex items-center gap-2 text-xs font-semibold text-slate-600">
+              <i class="fa-solid fa-check text-leaf-600"></i>
+              <span>Slogan: <em>&ldquo;Strong Wise Don't Be Worry&rdquo;</em></span>
+            </div>
+          </div>
+
+          <!-- Misi Card -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-[#FAFAFA] border border-slate-200 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center">
+              <i class="fa-solid fa-list-check text-base"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Misi Utama</h3>
+            <ul class="text-xs sm:text-sm text-slate-600 space-y-2.5">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-leaf-600 text-xs mt-1 shrink-0"></i>
+                <span>Menyediakan pengasuhan higienis, aman, dan penuh kasih sayang bagi bayi dan balita.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-leaf-600 text-xs mt-1 shrink-0"></i>
+                <span>Menstimulasi 6 aspek perkembangan anak (motorik, sensorik, bahasa, kognitif, sosial-emosional, seni).</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-leaf-600 text-xs mt-1 shrink-0"></i>
+                <span>Membiasakan toilet training, makan mandiri, dan adab sopan santun.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-leaf-600 text-xs mt-1 shrink-0"></i>
+                <span>Membangun kemitraan erat bersama orang tua lewat laporan harian transparan.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEDICATED SECTION: DATA & STATISTIK SEKOLAH -->
+    <section id="data-sekolah" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2 mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Profil Data Pokok</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Data & Statistik Sekolah</h2>
+          <p class="text-xs sm:text-sm text-slate-600">Transparansi jumlah murid, rasio guru, akreditasi, dan legalitas operasional.</p>
+        </div>
+
+        <!-- Metric Counters Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">120+</div>
+            <div class="text-xs font-bold text-slate-700">Murid Aktif</div>
+            <div class="text-[10px] text-slate-400">Daycare, KB & TK</div>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">18</div>
+            <div class="text-xs font-bold text-slate-700">Guru & Caregiver</div>
+            <div class="text-[10px] text-slate-400">Tersertifikasi P3K</div>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-brand-600">1 : 3</div>
+            <div class="text-xs font-bold text-slate-700">Rasio Balita</div>
+            <div class="text-[10px] text-slate-400">Pengawasan Intensif</div>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">6</div>
+            <div class="text-xs font-bold text-slate-700">Sentra Kelas</div>
+            <div class="text-[10px] text-slate-400">Montessori & Sensori</div>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-leaf-600">A</div>
+            <div class="text-xs font-bold text-slate-700">Akreditasi</div>
+            <div class="text-[10px] text-slate-400">BAN PAUD & PNF</div>
+          </div>
+
+          <div class="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1 shadow-xs">
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">10+ Th</div>
+            <div class="text-xs font-bold text-slate-700">Pengalaman</div>
+            <div class="text-[10px] text-slate-400">Di Jember</div>
+          </div>
+
+        </div>
+
+        <!-- Data Pokok Table / Card -->
+        <div class="mt-8 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+            <div class="font-bold text-sm text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-id-card text-brand-600"></i>
+              <span>Data Identitas & Legalitas Sekolah</span>
+            </div>
+            <span class="text-[10px] font-bold text-leaf-700 bg-leaf-50 px-2.5 py-1 rounded-full border border-leaf-100">
+              Terverifikasi Kemendikbudristek
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6 text-xs">
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">Nama Satuan Pendidikan</div>
+              <div class="font-bold text-slate-800 text-sm">Strawberry Preschool & Daycare Jember</div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">NPSN (Nomor Pokok Sekolah Nasional)</div>
+              <div class="font-bold text-slate-800 text-sm font-mono">69981234</div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">Bentuk Pendidikan</div>
+              <div class="font-bold text-slate-800 text-sm">TPA (Daycare), KB & TK</div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">Kurikulum Pembelajaran</div>
+              <div class="font-bold text-slate-800 text-sm">Kurikulum Merdeka PAUD + Montessori</div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">Status Akreditasi</div>
+              <div class="font-bold text-leaf-700 text-sm flex items-center gap-1.5">
+                <i class="fa-solid fa-award"></i>
+                <span>Akreditasi A (Unggul)</span>
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <div class="text-slate-400 font-semibold uppercase tracking-wider text-[10px]">Waktu Layanan</div>
+              <div class="font-bold text-slate-800 text-sm">Pagi & Full Day (07.00 - 17.00 WIB)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROGRAMS SECTION -->
+    <section id="program" class="py-14 md:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Jenjang Layanan</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Pilihan Program</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="aspect-[16/10] bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=80" alt="Daycare" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4 space-y-2">
+                <div class="flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                  <span>3 Bln - 2 Th</span>
+                  <span>Rasio 1:3</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900">Infant & Toddler Daycare</h3>
+                <p class="text-xs text-slate-600">Stimulasi sensori, makan bergizi, tidur ber-AC tenang, dan daily report WA.</p>
+                <div class="text-[11px] text-slate-500 font-medium pt-1">⏰ 07.00 - 17.00 WIB</div>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Daycare &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="aspect-[16/10] bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=500&q=80" alt="Playgroup" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4 space-y-2">
+                <div class="flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                  <span>2 - 3 Th</span>
+                  <span>Rasio 1:5</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900">Playgroup (KB)</h3>
+                <p class="text-xs text-slate-600">Transisi rumah ke sosial, sensory play, regulasi emosi, dan toilet training.</p>
+                <div class="text-[11px] text-slate-500 font-medium pt-1">⏰ 08.00 - 10.30 WIB</div>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Playgroup &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl border-2 border-brand-600 overflow-hidden flex flex-col justify-between relative">
+            <span class="absolute top-2.5 right-2.5 z-10 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">Favorit</span>
+            <div>
+              <div class="aspect-[16/10] bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=500&q=80" alt="Preschool TK" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4 space-y-2">
+                <div class="flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                  <span>3 - 6 Th</span>
+                  <span>Rasio 1:8</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900">Preschool & TK</h3>
+                <p class="text-xs text-slate-600">Persiapan SD: fonik dasar, logika berhitung, kemandirian, dan English exposure.</p>
+                <div class="text-[11px] text-slate-500 font-medium pt-1">⏰ 08.00 - 11.30 WIB</div>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs">Daftar TK &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="aspect-[16/10] bg-slate-100">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80" alt="After-school" class="w-full h-full object-cover">
+              </div>
+              <div class="p-4 space-y-2">
+                <div class="flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                  <span>3 - 8 Th</span>
+                  <span>Fleksibel</span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900">After-School Care</h3>
+                <p class="text-xs text-slate-600">Penitipan sore bagi ortu bekerja: makan siang hangat, istirahat, dan bimbingan PR.</p>
+                <div class="text-[11px] text-slate-500 font-medium pt-1">⏰ 11.30 - 17.00 WIB</div>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Sore &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FACILITIES & LIFE GALLERY -->
+    <section id="galeri" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Fasilitas</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Dokumentasi Lingkungan Sekolah</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10">
+          
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Kelas" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Ruang Kelas & Sentra Belajar</div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=600&q=80" alt="Playground" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Indoor & Outdoor Playground</div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Membaca" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Reading Corner & Storytelling</div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?auto=format&fit=crop&w=600&q=80" alt="Tidur" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Ruang Tidur Ber-AC & HEPA</div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" alt="Menu sehat" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Menu Makan Gizi Seimbang</div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=600&q=80" alt="Sensory" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-xs font-bold text-slate-800">Sensory & Art Corner</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEACHERS & EDUCATORS -->
+    <section id="pengajar" class="py-14 md:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Tim Pendidik & Pengasuh</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Profil Guru & Caregiver</h2>
+          <p class="text-xs sm:text-sm text-slate-600">Tersertifikasi PAUD, terlatih pertolongan pertama (P3K anak), dan penuh kasih sayang.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          
+          <!-- Teacher 1 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+            <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                alt="Ratna Dewi, M.Pd." 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              >
+            </div>
+            <div class="p-4 space-y-1">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded">Principal</span>
+              <h4 class="text-sm font-bold text-slate-900">Ratna Dewi, M.Pd.</h4>
+              <p class="text-xs text-slate-500">Kepala Sekolah & Konsultan Perkembangan Anak</p>
+            </div>
+          </div>
+
+          <!-- Teacher 2 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+            <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" 
+                alt="Nadia Safira, S.Pd." 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              >
+            </div>
+            <div class="p-4 space-y-1">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-slate-700 bg-slate-100 px-2 py-0.5 rounded">Lead Educator</span>
+              <h4 class="text-sm font-bold text-slate-900">Nadia Safira, S.Pd.</h4>
+              <p class="text-xs text-slate-500">Wali Kelas TK & Spesialis Fonik Literasi Dini</p>
+            </div>
+          </div>
+
+          <!-- Teacher 3 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+            <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" 
+                alt="Anisa Putri, A.Md.Keb." 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              >
+            </div>
+            <div class="p-4 space-y-1">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-leaf-700 bg-leaf-50 px-2 py-0.5 rounded">Health & Care</span>
+              <h4 class="text-sm font-bold text-slate-900">Anisa Putri, A.Md.Keb.</h4>
+              <p class="text-xs text-slate-500">Koordinator Daycare & Sanitasi Kesehatan</p>
+            </div>
+          </div>
+
+          <!-- Teacher 4 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+            <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                alt="Clarissa Larasati, S.Sn." 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              >
+            </div>
+            <div class="p-4 space-y-1">
+              <span class="inline-block text-[10px] font-bold uppercase tracking-wider text-slate-700 bg-slate-100 px-2 py-0.5 rounded">Sensory & Arts</span>
+              <h4 class="text-sm font-bold text-slate-900">Clarissa Larasati, S.Sn.</h4>
+              <p class="text-xs text-slate-500">Instruktur Seni Sensori & Motorik Halus</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADMISSIONS (SPMB) -->
+    <section id="alur" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-xl mx-auto space-y-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Alur SPMB</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">4 Langkah Pendaftaran</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+          
+          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">01</div>
+            <h4 class="text-sm font-bold text-slate-900">Inquiry & Konsultasi</h4>
+            <p class="text-xs text-slate-500">Hubungi admin untuk cek ketersediaan kuota kelas.</p>
+          </div>
+
+          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">02</div>
+            <h4 class="text-sm font-bold text-slate-900">School Tour & Trial</h4>
+            <p class="text-xs text-slate-500">Kunjungan langsung dan free 1x trial class anak.</p>
+          </div>
+
+          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">03</div>
+            <h4 class="text-sm font-bold text-slate-900">Observasi & Diskusi</h4>
+            <p class="text-xs text-slate-500">Wawancara santai riwayat kebiasaan dan alergi anak.</p>
+          </div>
+
+          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center">04</div>
+            <h4 class="text-sm font-bold text-slate-900">Registrasi</h4>
+            <p class="text-xs text-slate-500">Konfirmasi berkas dan persiapan hari pertama.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORM & LEAD CAPTURE -->
+    <section id="daftar" class="py-14 md:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="p-6 sm:p-8 rounded-2xl border border-slate-200 bg-[#FAFAFA] space-y-5">
+          <div class="text-center space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Kunjungan</span>
+            <h2 class="text-2xl font-extrabold text-slate-900">Book a School Tour</h2>
+            <p class="text-xs text-slate-500">Pesan langsung dikirimkan ke WhatsApp admin resmi Strawberry Jember.</p>
+          </div>
+
+          <form id="tourForm" class="space-y-3" onsubmit="handleTourSubmit(event)">
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" for="parentName">Nama Orang Tua *</label>
+                <input type="text" id="parentName" required placeholder="Contoh: Ibu Sarah" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-1 focus:ring-brand-600 bg-white">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" for="childName">Nama & Usia Anak *</label>
+                <input type="text" id="childName" required placeholder="Contoh: Kenzo (2 th)" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-1 focus:ring-brand-600 bg-white">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" for="programSelect">Program Pilihan *</label>
+                <select id="programSelect" required class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-1 focus:ring-brand-600 bg-white">
+                  <option value="Daycare (3 bln - 2 th)">Daycare (3 bln - 2 th)</option>
+                  <option value="Playgroup (2 - 3 th)">Playgroup (2 - 3 th)</option>
+                  <option value="Preschool / TK (3 - 6 th)">Preschool & TK (3 - 6 th)</option>
+                  <option value="After-School Care">After-School Care (3 - 8 th)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1" for="tourDate">Rencana Kunjungan</label>
+                <input type="date" id="tourDate" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-1 focus:ring-brand-600 bg-white">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1" for="notes">Catatan Tambahan</label>
+              <input type="text" id="notes" placeholder="Opsional: Ingin trial class hari Sabtu..." class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-1 focus:ring-brand-600 bg-white">
+            </div>
+
+            <button type="submit" class="w-full py-2.5 px-4 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm transition flex items-center justify-center gap-2 shadow-sm">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Kirim via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        
+        <div class="text-center space-y-1">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-600">FAQ</span>
+          <h2 class="text-2xl font-extrabold text-slate-900">Pertanyaan Umum</h2>
+        </div>
+
+        <div class="space-y-2.5">
+          
+          <details class="group bg-white p-4 rounded-xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-slate-800 text-sm">
+              <span>Berapa rasio anak dan pengasuh di daycare?</span>
+              <span class="ml-3 shrink-0 transition-transform duration-200 group-open:rotate-180 text-slate-400">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </summary>
+            <div class="pt-2 text-xs text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+              Rasio dijaga ketat di 1:3 untuk kelompok bayi & balita (Infant/Toddler Daycare), dan 1:6–8 untuk jenjang TK/Preschool.
+            </div>
+          </details>
+
+          <details class="group bg-white p-4 rounded-xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-slate-800 text-sm">
+              <span>Apakah orang tua bisa memantau via CCTV?</span>
+              <span class="ml-3 shrink-0 transition-transform duration-200 group-open:rotate-180 text-slate-400">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </summary>
+            <div class="pt-2 text-xs text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+              Ya, seluruh area terpantau CCTV aktif. Orang tua juga mendapatkan laporan harian (porsi makan, tidur, foto aktivitas) lewat WhatsApp.
+            </div>
+          </details>
+
+          <details class="group bg-white p-4 rounded-xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-slate-800 text-sm">
+              <span>Bagaimana penyediaan makanan bagi anak alergi?</span>
+              <span class="ml-3 shrink-0 transition-transform duration-200 group-open:rotate-180 text-slate-400">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </summary>
+            <div class="pt-2 text-xs text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+              Riwayat alergi didata saat registrasi. Dapur sekolah menyediakan menu pengganti higienis bebas bahan pemicu alergi tanpa biaya tambahan.
+            </div>
+          </details>
+
+          <details class="group bg-white p-4 rounded-xl border border-slate-200 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+            <summary class="flex items-center justify-between font-bold text-slate-800 text-sm">
+              <span>Apakah tersedia sesi trial class?</span>
+              <span class="ml-3 shrink-0 transition-transform duration-200 group-open:rotate-180 text-slate-400">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </span>
+            </summary>
+            <div class="pt-2 text-xs text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+              Ya, tersedia Free 1x Trial Class agar anak dapat mengenal lingkungan dan pengasuh sebelum memulai sekolah resmi.
+            </div>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="space-y-3">
+          <div class="bg-white/95 p-2 rounded-xl inline-block">
+            <img src="assets/logo_cropped.png" alt="Strawberry Preschool & Daycare Jember" class="h-9 w-auto object-contain">
+          </div>
+          <p class="text-slate-400 leading-relaxed">
+            &ldquo;Strong Wise Don't Be Worry&rdquo;<br>
+            Pendidikan anak usia dini & daycare terpadu di Jember.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-bold text-white uppercase text-[11px]">Programs</div>
+          <p class="text-slate-400">Daycare (3 bln - 2 th)</p>
+          <p class="text-slate-400">Playgroup (2 - 3 th)</p>
+          <p class="text-slate-400">Preschool & TK (3 - 6 th)</p>
+          <p class="text-slate-400">After-School Care</p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-bold text-white uppercase text-[11px]">Navigasi</div>
+          <p><a href="#tentang" class="text-slate-400 hover:text-white">Tentang Kami</a></p>
+          <p><a href="#visi-misi" class="text-slate-400 hover:text-white">Visi & Misi</a></p>
+          <p><a href="#data-sekolah" class="text-slate-400 hover:text-white">Data Sekolah</a></p>
+          <p><a href="#galeri" class="text-slate-400 hover:text-white">Fasilitas</a></p>
+          <p><a href="#pengajar" class="text-slate-400 hover:text-white">Tim Pengajar</a></p>
+          <p><a href="#alur" class="text-slate-400 hover:text-white">Alur Masuk</a></p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="font-bold text-white uppercase text-[11px]">Kontak</div>
+          <p class="text-slate-400"><i class="fa-solid fa-location-dot mr-1.5 text-brand-500"></i>Jl. Danau Toba No. 45, Jember</p>
+          <p class="text-slate-400"><i class="fa-brands fa-whatsapp mr-1.5 text-emerald-400"></i>+62 851-7225-2910</p>
+          <p class="text-slate-400"><i class="fa-regular fa-clock mr-1.5 text-slate-500"></i>Senin - Jumat: 07.00 - 17.00 WIB</p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 gap-2">
+        <div>&copy; 2026 Strawberry Preschool & Daycare Jember. All rights reserved.</div>
+        <a href="#beranda" class="hover:text-white transition">Back to top &uarr;</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Mobile Nav
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const openIcon = document.getElementById('menuOpenIcon');
+    const closeIcon = document.getElementById('menuCloseIcon');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        openIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          openIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        });
+      });
+    }
+
+    // Direct WhatsApp Form
+    function handleTourSubmit(e) {
+      e.preventDefault();
+      const parent = document.getElementById('parentName').value.trim();
+      const child = document.getElementById('childName').value.trim();
+      const program = document.getElementById('programSelect').value;
+      const date = document.getElementById('tourDate').value || '-';
+      const notes = document.getElementById('notes').value.trim() || '-';
+
+      const msg = `Halo Admin Strawberry Preschool & Daycare Jember,\n\nSaya ingin konsultasi / Book a Tour:\n• Nama Orang Tua: ${parent}\n• Nama & Usia Anak: ${child}\n• Program: ${program}\n• Rencana Kunjungan: ${date}\n• Catatan: ${notes}\n\nMohon info ketersediaan kuota & biayanya. Terima kasih!`;
+
+      const waUrl = 'https://wa.me/6285172252910?text=' + encodeURIComponent(msg);
+      window.open(waUrl, '_blank');
+    }
+  </script>
+
+</body>
+</html>
