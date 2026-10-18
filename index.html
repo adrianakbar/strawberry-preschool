@@ -61,10 +61,39 @@
     ::-webkit-scrollbar-track { background: #f8fafc; }
     ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
     ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+    /* Playful textures & animations for background enrichment */
+    .bg-playful-dots {
+      background-image: 
+        radial-gradient(rgba(229, 29, 36, 0.08) 1.5px, transparent 1.5px),
+        radial-gradient(rgba(94, 168, 67, 0.08) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+    .bg-warm-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.55) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.55) 1px, transparent 1px);
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(2deg); }
+    }
+    @keyframes float-reverse {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(7px) rotate(-2deg); }
+    }
+    .animate-float {
+      animation: float-slow 6s ease-in-out infinite;
+    }
+    .animate-float-reverse {
+      animation: float-reverse 7s ease-in-out infinite;
+    }
   </style>
 </head>
 
-<body class="bg-[#FAFAFA] text-slate-700 font-sans antialiased selection:bg-brand-100 selection:text-brand-700">
+<body class="bg-[#FFFDF9] text-slate-700 font-sans antialiased selection:bg-brand-100 selection:text-brand-700">
 
   <!-- TOP BAR -->
   <aside class="bg-slate-900 text-slate-200 text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
@@ -143,8 +172,26 @@
 
   <main>
     <!-- HERO SECTION -->
-    <section id="beranda" class="pt-8 pb-14 md:pt-12 md:pb-20 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="beranda" class="relative pt-10 pb-16 md:pt-16 md:pb-24 bg-gradient-to-b from-[#FFF5F5] via-[#FFFDF9] to-[#FAF7F2] border-b border-slate-200 overflow-hidden">
+      <!-- Ambient colorful backdrop glow -->
+      <div class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 bg-brand-200/50 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute -top-20 -right-20 w-96 h-96 bg-leaf-100/60 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-48 bg-amber-100/40 rounded-full blur-3xl"></div>
+      
+      <!-- Playful dot matrix pattern overlay -->
+      <div class="pointer-events-none absolute inset-0 bg-playful-dots opacity-80"></div>
+
+      <!-- Floating playful preschool badges -->
+      <div class="pointer-events-none hidden xl:flex items-center gap-2 absolute top-16 left-8 px-3.5 py-1.5 rounded-full bg-white/95 border border-brand-200 text-brand-600 shadow-sm text-xs font-bold animate-float z-10">
+        <i class="fa-solid fa-shapes text-sm"></i>
+        <span>Play-Based Learning</span>
+      </div>
+      <div class="pointer-events-none hidden xl:flex items-center gap-2 absolute bottom-12 right-12 px-3.5 py-1.5 rounded-full bg-white/95 border border-leaf-200 text-leaf-700 shadow-sm text-xs font-bold animate-float-reverse z-10">
+        <i class="fa-solid fa-seedling text-sm"></i>
+        <span>Montessori & Sensorik</span>
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid lg:grid-cols-12 gap-8 items-center">
           
@@ -223,8 +270,13 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="tentang" class="py-14 md:py-20 bg-[#FAFAFA]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="tentang" class="relative py-14 md:py-20 bg-white border-b border-slate-200 overflow-hidden">
+      <!-- Subtle warm ambient accents -->
+      <div class="pointer-events-none absolute top-1/2 -left-20 w-80 h-80 bg-brand-50 rounded-full blur-3xl opacity-70"></div>
+      <div class="pointer-events-none absolute bottom-0 -right-20 w-80 h-80 bg-leaf-50 rounded-full blur-3xl opacity-70"></div>
+      <div class="pointer-events-none absolute inset-0 bg-warm-grid opacity-60"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid lg:grid-cols-12 gap-8 items-center">
           
@@ -273,8 +325,12 @@
     </section>
 
     <!-- DEDICATED SECTION: VISI & MISI -->
-    <section id="visi-misi" class="py-14 md:py-20 bg-white border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="visi-misi" class="relative py-14 md:py-20 bg-[#FAF7F2] border-b border-slate-200 overflow-hidden">
+      <!-- Playful dot matrix & ambient glow -->
+      <div class="pointer-events-none absolute inset-0 bg-playful-dots opacity-70"></div>
+      <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-72 bg-brand-100/35 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2 mb-10">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Landasan Lembaga</span>
@@ -284,7 +340,7 @@
         <div class="grid md:grid-cols-2 gap-6">
           
           <!-- Visi Card -->
-          <div class="p-6 sm:p-8 rounded-2xl bg-[#FAFAFA] border border-slate-200 space-y-3 flex flex-col justify-between">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200 shadow-sm hover:shadow-md transition-shadow space-y-3 flex flex-col justify-between">
             <div class="space-y-3">
               <div class="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center">
                 <i class="fa-solid fa-bullseye text-base"></i>
@@ -301,7 +357,7 @@
           </div>
 
           <!-- Misi Card -->
-          <div class="p-6 sm:p-8 rounded-2xl bg-[#FAFAFA] border border-slate-200 space-y-3">
+          <div class="p-6 sm:p-8 rounded-2xl bg-white/95 backdrop-blur-sm border border-slate-200 shadow-sm hover:shadow-md transition-shadow space-y-3">
             <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center">
               <i class="fa-solid fa-list-check text-base"></i>
             </div>
@@ -332,8 +388,13 @@
     </section>
 
     <!-- DEDICATED SECTION: DATA & STATISTIK SEKOLAH -->
-    <section id="data-sekolah" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="data-sekolah" class="relative py-14 md:py-20 bg-white border-b border-slate-200 overflow-hidden">
+      <!-- Warm grid texture & leaf glow -->
+      <div class="pointer-events-none absolute inset-0 bg-warm-grid opacity-55"></div>
+      <div class="pointer-events-none absolute top-10 right-10 w-72 h-72 bg-leaf-100/35 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute bottom-0 left-10 w-72 h-72 bg-brand-50/60 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2 mb-10">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Profil Data Pokok</span>
@@ -434,8 +495,13 @@
     </section>
 
     <!-- PROGRAMS SECTION -->
-    <section id="program" class="py-14 md:py-20 bg-white border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="program" class="relative py-14 md:py-20 bg-gradient-to-b from-[#FFFDF9] via-[#FFF8F6] to-white border-b border-slate-200 overflow-hidden">
+      <!-- Playful dots & pastel strawberry/leaf glow -->
+      <div class="pointer-events-none absolute inset-0 bg-playful-dots opacity-75"></div>
+      <div class="pointer-events-none absolute -top-16 -left-16 w-80 h-80 bg-brand-100/40 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-16 -right-16 w-80 h-80 bg-leaf-100/40 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Jenjang Layanan</span>
@@ -445,7 +511,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
           
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col justify-between">
             <div>
               <div class="aspect-[16/10] bg-slate-100">
                 <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=80" alt="Daycare" class="w-full h-full object-cover">
@@ -461,12 +527,12 @@
               </div>
             </div>
             <div class="p-4 pt-0">
-              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Daycare &rarr;</a>
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs transition">Daftar Daycare &rarr;</a>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col justify-between">
             <div>
               <div class="aspect-[16/10] bg-slate-100">
                 <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=500&q=80" alt="Playgroup" class="w-full h-full object-cover">
@@ -482,13 +548,13 @@
               </div>
             </div>
             <div class="p-4 pt-0">
-              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Playgroup &rarr;</a>
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs transition">Daftar Playgroup &rarr;</a>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-2xl border-2 border-brand-600 overflow-hidden flex flex-col justify-between relative">
-            <span class="absolute top-2.5 right-2.5 z-10 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">Favorit</span>
+          <div class="bg-white rounded-2xl border-2 border-brand-600 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col justify-between relative">
+            <span class="absolute top-2.5 right-2.5 z-10 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">Favorit</span>
             <div>
               <div class="aspect-[16/10] bg-slate-100">
                 <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=500&q=80" alt="Preschool TK" class="w-full h-full object-cover">
@@ -504,12 +570,12 @@
               </div>
             </div>
             <div class="p-4 pt-0">
-              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs">Daftar TK &rarr;</a>
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs transition">Daftar TK &rarr;</a>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 overflow-hidden flex flex-col justify-between">
             <div>
               <div class="aspect-[16/10] bg-slate-100">
                 <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80" alt="After-school" class="w-full h-full object-cover">
@@ -525,7 +591,7 @@
               </div>
             </div>
             <div class="p-4 pt-0">
-              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs">Daftar Sore &rarr;</a>
+              <a href="#daftar" class="block w-full py-2 text-center rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs transition">Daftar Sore &rarr;</a>
             </div>
           </div>
 
@@ -535,8 +601,12 @@
     </section>
 
     <!-- FACILITIES & LIFE GALLERY -->
-    <section id="galeri" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="galeri" class="relative py-14 md:py-20 bg-[#FAF7F2] border-b border-slate-200 overflow-hidden">
+      <!-- Warm grid overlay -->
+      <div class="pointer-events-none absolute inset-0 bg-warm-grid opacity-60"></div>
+      <div class="pointer-events-none absolute bottom-0 right-10 w-80 h-80 bg-brand-50/70 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Fasilitas</span>
@@ -593,8 +663,13 @@
     </section>
 
     <!-- TEACHERS & EDUCATORS -->
-    <section id="pengajar" class="py-14 md:py-20 bg-white border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="pengajar" class="relative py-14 md:py-20 bg-white border-b border-slate-200 overflow-hidden">
+      <!-- Playful dots & ambient glow -->
+      <div class="pointer-events-none absolute inset-0 bg-playful-dots opacity-60"></div>
+      <div class="pointer-events-none absolute top-10 right-10 w-80 h-80 bg-amber-100/40 rounded-full blur-3xl"></div>
+      <div class="pointer-events-none absolute bottom-0 left-10 w-80 h-80 bg-brand-50/60 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Tim Pendidik & Pengasuh</span>
@@ -605,7 +680,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
           
           <!-- Teacher 1 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
             <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
@@ -621,7 +696,7 @@
           </div>
 
           <!-- Teacher 2 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
             <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" 
@@ -637,7 +712,7 @@
           </div>
 
           <!-- Teacher 3 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
             <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" 
@@ -653,7 +728,7 @@
           </div>
 
           <!-- Teacher 4 -->
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm group">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200 group">
             <div class="aspect-[4/5] bg-slate-100 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
@@ -674,8 +749,12 @@
     </section>
 
     <!-- ADMISSIONS (SPMB) -->
-    <section id="alur" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="alur" class="relative py-14 md:py-20 bg-[#FAF7F2] border-b border-slate-200 overflow-hidden">
+      <!-- Warm grid texture -->
+      <div class="pointer-events-none absolute inset-0 bg-warm-grid opacity-60"></div>
+      <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-60 bg-leaf-100/30 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto space-y-2">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Alur SPMB</span>
@@ -684,25 +763,25 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
           
-          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+          <div class="p-5 bg-white/95 backdrop-blur-sm rounded-xl border border-slate-200 shadow-sm space-y-2">
             <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">01</div>
             <h4 class="text-sm font-bold text-slate-900">Inquiry & Konsultasi</h4>
             <p class="text-xs text-slate-500">Hubungi admin untuk cek ketersediaan kuota kelas.</p>
           </div>
 
-          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+          <div class="p-5 bg-white/95 backdrop-blur-sm rounded-xl border border-slate-200 shadow-sm space-y-2">
             <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">02</div>
             <h4 class="text-sm font-bold text-slate-900">School Tour & Trial</h4>
             <p class="text-xs text-slate-500">Kunjungan langsung dan free 1x trial class anak.</p>
           </div>
 
-          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+          <div class="p-5 bg-white/95 backdrop-blur-sm rounded-xl border border-slate-200 shadow-sm space-y-2">
             <div class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-xs flex items-center justify-center">03</div>
             <h4 class="text-sm font-bold text-slate-900">Observasi & Diskusi</h4>
             <p class="text-xs text-slate-500">Wawancara santai riwayat kebiasaan dan alergi anak.</p>
           </div>
 
-          <div class="p-5 bg-white rounded-xl border border-slate-200 space-y-2">
+          <div class="p-5 bg-white/95 backdrop-blur-sm rounded-xl border border-slate-200 shadow-sm space-y-2">
             <div class="w-8 h-8 rounded-lg bg-brand-600 text-white font-bold text-xs flex items-center justify-center">04</div>
             <h4 class="text-sm font-bold text-slate-900">Registrasi</h4>
             <p class="text-xs text-slate-500">Konfirmasi berkas dan persiapan hari pertama.</p>
@@ -714,10 +793,14 @@
     </section>
 
     <!-- FORM & LEAD CAPTURE -->
-    <section id="daftar" class="py-14 md:py-20 bg-white border-t border-slate-200">
-      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="daftar" class="relative py-14 md:py-20 bg-gradient-to-b from-white via-[#FFF5F5] to-[#FFFDF9] border-b border-slate-200 overflow-hidden">
+      <!-- Playful dots & strawberry glow backdrop -->
+      <div class="pointer-events-none absolute inset-0 bg-playful-dots opacity-75"></div>
+      <div class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-96 bg-brand-200/35 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="p-6 sm:p-8 rounded-2xl border border-slate-200 bg-[#FAFAFA] space-y-5">
+        <div class="p-6 sm:p-8 rounded-2xl border border-brand-100 bg-white/95 backdrop-blur-sm shadow-md space-y-5">
           <div class="text-center space-y-1">
             <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Kunjungan</span>
             <h2 class="text-2xl font-extrabold text-slate-900">Book a School Tour</h2>
@@ -770,8 +853,12 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section id="faq" class="py-14 md:py-20 bg-[#FAFAFA] border-t border-slate-200">
-      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+    <section id="faq" class="relative py-14 md:py-20 bg-[#FAF7F2] border-b border-slate-200 overflow-hidden">
+      <!-- Warm grid texture -->
+      <div class="pointer-events-none absolute inset-0 bg-warm-grid opacity-50"></div>
+      <div class="pointer-events-none absolute bottom-0 right-10 w-80 h-80 bg-leaf-50/70 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         
         <div class="text-center space-y-1">
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600">FAQ</span>
